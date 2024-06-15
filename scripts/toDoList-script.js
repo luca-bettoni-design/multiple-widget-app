@@ -1,26 +1,26 @@
-const TaskInput = document.getElementById("TaskInput")
-const ListContainer = document.getElementById("ListContainer")
+const taskInput = document.getElementById("id-task-input")
+const listWrapper = document.getElementById("id-list-wrapper")
 
 function AddTask(){
-    if(TaskInput.value === ''){
+    if(taskInput.value === ''){
         alert("You must write something, asshole...");
     }
 
     else{
         let GeneratedTask = document.createElement("li");
-        GeneratedTask.innerHTML = TaskInput.value;
-        ListContainer.appendChild(GeneratedTask);
+        GeneratedTask.innerHTML = taskInput.value;
+        listWrapper.appendChild(GeneratedTask);
         let DeleteIcon = document.createElement("span");
         DeleteIcon.classList.add("DeleteIcon");
         DeleteIcon.innerHTML = "\u00d7";
         GeneratedTask.appendChild(DeleteIcon);
     }
-    TaskInput.value = "";
+    taskInput.value = "";
     SaveData();
 
     }
 
-    ListContainer.addEventListener("click", function(e){
+    listWrapper.addEventListener("click", function(e){
         if(e.target.tagName === "LI"){
             e.target.classList.toggle("Checked");
             SaveData();
@@ -32,10 +32,10 @@ function AddTask(){
     }, false);
 
     function SaveData(){
-        localStorage.setItem("SavedElement", ListContainer.innerHTML);
+        localStorage.setItem("SavedElement", listWrapper.innerHTML);
     }
     
     function ShowData(){
-        ListContainer.innerHTML = localStorage.getItem("SavedElement")
+        listWrapper.innerHTML = localStorage.getItem("SavedElement")
     }
     ShowData()

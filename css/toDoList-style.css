@@ -50,11 +50,10 @@
 
 /*input----------------------------------------------------------*/
 
-.InputWrapper{
+.task-input-wrapper{
     display: flex;
     flex-direction: row;
-    align-items: left;
-    margin: 0 0 16px 0;
+    column-gap: 12px;
 }
 
 .InputBox{

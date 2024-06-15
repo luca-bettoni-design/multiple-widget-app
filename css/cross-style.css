@@ -1,14 +1,24 @@
+/* ----------------------------*/
+/* ---------- GLOBAL ----------*/
+/* ----------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
+    border: none;
+    outline: none;
 }
 
 body{
     background-color: var(--gray-950);
     font-family: 'Inter';
 }
+
+/* --------------------------------*/
+/* ---------- CONTAINERS ----------*/
+/* --------------------------------*/
 
 .main-grid{
     display: grid;
@@ -26,13 +36,60 @@ body{
 
 .heading-wrapper{
     padding: var(--widget-padding);
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--gray-600);
 }
 
 .content-wrapper{
     padding: var(--widget-padding);
-
 }
+
+/* -----------------------------*/
+/* ---------- BUTTONS ----------*/
+/* -----------------------------*/
+
+.btn-std{
+    height: 2.75rem;
+    background-color: var(--violet-500);
+    color: white;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-std:hover{
+    background-color: var(--violet-600);
+}
+
+.input-std{
+    width: 100%;
+    height: 2.75rem;
+    background-color: var(--gray-950);
+    padding: 0 1rem 0 1rem;
+    border: solid 1px var(--gray-600); 
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input-std::placeholder{
+    color: var(--gray-600);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input-std:hover{
+border: solid 1px var(--violet-500); 
+}
+
+
+.input-std:focus{
+    border: solid 1px var(--violet-500); 
+}
+
+/* ---------------------------*/
+/* ---------- TEXTS ----------*/
+/* ---------------------------*/
+
 h2{
     color: white;
     font-size: 2rem;

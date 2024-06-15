@@ -12,5 +12,17 @@
 	--gray-900: #111827;
 	--gray-950: #030712;
 
-    --widget-padding: 32px;
+    --violet-500: #8b5cf6;
+    --violet-600: #7c3aed;
+
+	--red-300: #fca5a5;
+	--red-400: #f87171;
+
+	--yellow-300: #fde047;
+	--yellow-400: #facc15;
+
+	--lime-300: #bef264;
+	--lime-400: #a3e635;
+
+	--widget-padding: 32px;
 }
