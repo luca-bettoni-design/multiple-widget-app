@@ -1,23 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-body{
-    background: #001e4d;
-}
-
 h1{
     font-size: 36;
     color: #222;
-}
-
-h2{
-    font-size: 20;
-    color:#222;
-    margin-bottom: 24px;
 }
 
 .app-content-section{

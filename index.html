@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/cross-style.css">
+	</link>
+	<link rel="stylesheet" href="css/quiz-style.css">
+	</link>
+	<link rel="stylesheet" href="css/toDoList-style.css">
+	</link>
+	<link rel="stylesheet" href="css/wheather-style.css">
+	</link>
+	<link rel="stylesheet" href="css/global-variables.css">
+	</link>
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="main-grid">
+
+		<!------------------------------>
+		<!---------- WHEATHER ---------->
+		<!------------------------------>
+
+		<div class="widget-wrapper">
+
+			<div class="heading-wrapper">
+				<h2>Wheather</h2>
+			</div>
+
+			<div class="content-wrapper">
+				<div class="Search-Wrapper">
+					<input type="text" class="City-InputField" placeholder="enter city name" spellcheck="false">
+					<button class="Search-Button">
+						<image class="Search-Icon" src="images/search.png">
+					</button>
+				</div>
+				<!---->
+				<div class="ErrorMessage-Wrapper">
+					<p class="ErrorMessage-Paragraph">invalid city name</p>
+				</div>
+				<!---->
+				<div class="WeatherInfo-Wrapper">
+					<img class="Weather-Icon" src="images/rain.png">
+					<h1 class="Temperature-H1">22°C</h1>
+					<h2 class="City-H2">New York</h2>
+					<div class="Details-Wrapper">
+						<div class="DataColumn">
+							<img class="Humidity-Image" src="images/humidity.png">
+							<div>
+								<p class="Humidity-Label"> HUMIDITY </p>
+								<p class="Humidity-Value">50%</p>
+							</div>
+						</div>
+						<div class="DataColumn">
+							<img class="Wind-Image" src="images/wind.png">
+							<div>
+								<p class="Wind-Label"> WIND </p>
+								<p class="Wind-Value">15</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-------------------------------->
+		<!---------- TO DO LIST ---------->
+		<!-------------------------------->
+
+
+		<div class="widget-wrapper">
+
+			<div class="heading-wrapper">
+				<h2>To-Do List</h2>
+			</div>
+
+			<div class="content-wrapper">
+				<div class="InputWrapper">
+					<input type="text" class="InputBox" id="TaskInput" placeholder="Write the note text">
+					<button onclick="AddTask()" class="AddButton">Add</button>
+				</div>
+				<div class="ListWrapper">
+					<ul class="ListWrapper" id="ListContainer">
+						<!-- <li class="Checked">Task 1</li>
+						<li>Task 2</li>
+						<li>Task 3</li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-------------------------->
+		<!---------- QUIZ ---------->
+		<!-------------------------->
+
+		<div class="widget-wrapper">
+
+			<div class="heading-wrapper">
+				<h2> Quiz </h2>
+			</div>
+
+			<div class="content-wrapper">
+				<h2 id="question-id">Question goes here</h2>
+
+				<div class="buttons-wrapper" id="answer-wrapper-id">
+					<button class="standard-button">Answer 1</button>
+					<button class="standard-button">Answer 2</button>
+					<button class="standard-button">Answer 3</button>
+					<button class="standard-button">Answer 4</button>
+				</div>
+
+				<button class="standard-button" id="next-button-id">Next</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="scripts/quiz-script.js"></script>
+	<script src="scripts/toDoList-script.js"></script>
+	
+</body>
+
+</html>
