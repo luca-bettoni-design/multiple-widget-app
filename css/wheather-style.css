@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #222;
+}
+
+.Card-Wrapper {
+    width: 90%;
+    max-width: 480px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0 auto;
+    border-radius: 12px;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex; /*not needed*/
+    flex-direction: column; /*not needed*/
+}
+
+/* SEARCH -------------------- */
+
+.Search-Wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ErrorMessage-Wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 32px;
+    border-radius: 12px;
+    display: none;
+}
+
+.ErrorMessage-Paragraph {
+     text-align: center;
+}
+
+.WeatherInfo-Wrapper {
+    display:block;
+    display:none;
+}
+
+.City-InputField {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 12px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.Search-Button {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    padding-top: 6px;
+}
+
+.Search-Icon {
+    width: 20px;
+}
+
+/* TEMPERATURE -------------------- */
+
+.Weather-Icon {
+    width: 160px;
+    margin-top: 30px;
+}
+
+.Temperature-H1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.City-H2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: -10px 0 0 0;
+}
+
+/* DETAILS -------------------- */
+
+
+.Details-Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+.DataColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+}
+
+.Wind-Image{
+    width: 40px;
+    margin: 0 0 16px 0;
+}
+
+.Humidity-Image{
+    width: 40px;
+    margin: 4px 0 12px 0;
+}
+
+.Humidity-Label{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.Humidity-Value{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Wind-Label{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.Wind-Value{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+
+
