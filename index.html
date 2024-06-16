@@ -11,7 +11,7 @@
 	</link>
 	<link rel="stylesheet" href="css/toDoList-style.css">
 	</link>
-	<link rel="stylesheet" href="css/wheather-style.css">
+	<link rel="stylesheet" href="css/weather-style.css">
 	</link>
 	<link rel="stylesheet" href="css/global-variables.css">
 	</link>
@@ -22,20 +22,20 @@
 
 	<div class="main-grid">
 
-		<!------------------------------>
-		<!---------- WHEATHER ---------->
-		<!------------------------------>
+		<!----------------------------->
+		<!---------- WEATHER ---------->
+		<!----------------------------->
 
 		<div class="widget-wrapper">
 
 			<div class="heading-wrapper">
-				<h2>Wheather</h2>
+				<h2>Weather</h2>
 			</div>
 
 			<div class="content-wrapper">
-				<div class="Search-Wrapper">
-					<input type="text" class="City-InputField" placeholder="enter city name" spellcheck="false">
-					<button class="Search-Button">
+				<div class="search-wrapper">
+					<input type="text" class="input-std" id="id-city-input" placeholder="enter city name" spellcheck="false">
+					<button class="btn-std" id="id-city-search-btn">
 						<image class="Search-Icon" src="images/search.png">
 					</button>
 				</div>
@@ -45,7 +45,7 @@
 				</div>
 				<!---->
 				<div class="WeatherInfo-Wrapper">
-					<img class="Weather-Icon" src="images/rain.png">
+					<img class="weather-icon" id="id-weather-icon" src="images/rain.png">
 					<h1 class="Temperature-H1">22°C</h1>
 					<h2 class="City-H2">New York</h2>
 					<div class="Details-Wrapper">
@@ -120,10 +120,30 @@
 			</div>
 		</div>
 
+		<!------------------------------>
+		<!---------- PASSWORD ---------->
+		<!------------------------------>
+
+		<div class="main-container">
+			<div class="main-wrapper">
+				<h1 class="widget-title"> Rnadom password generator</h1>
+				<div class="generator-wrapper">
+					<input type="text" class="std-type-field" id="password-output" placeholder="Password will appera right here">
+					<text class="text-button"> copy </text>
+				</div>
+	
+			</div>
+		</div>
+
 	</div>
 
 	<script src="scripts/quiz-script.js"></script>
 	<script src="scripts/toDoList-script.js"></script>
+	<script src="scripts/weather-script.js"></script>
+
+
+
+	
 	
 </body>
 
