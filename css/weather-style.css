@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-.ErrorMessage-Wrapper {
+.error-wrapper {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 0;
@@ -23,7 +23,7 @@
      text-align: center;
 }
 
-.WeatherInfo-Wrapper {
+.weather-info-wrapper {
     display:block;
     display:none;
 }
