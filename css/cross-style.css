@@ -44,22 +44,15 @@ body{
     padding: var(--widget-padding);
 }
 
-/* -----------------------------*/
-/* ---------- BUTTONS ----------*/
-/* -----------------------------*/
-
-.btn-std{
-    height: 2.75rem;
-    background-color: var(--violet-500);
-    color: white;
-    padding: 0 1.5rem 0 1.5rem;
-    font-size: 1rem;
-    font-weight: 400;
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
 }
 
-.btn-std:hover{
-    background-color: var(--violet-600);
-}
+/* ----------------------------*/
+/* ---------- FIELDS ----------*/
+/* ----------------------------*/
 
 .input-std{
     width: 100%;
@@ -87,6 +80,33 @@ border: solid 1px var(--violet-500);
     border: solid 1px var(--violet-500); 
 }
 
+/* -----------------------------*/
+/* ---------- BUTTONS ----------*/
+/* -----------------------------*/
+
+.btn-std{
+    height: 2.75rem;
+    background-color: var(--violet-500);
+    color: white;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-std.search-btn{
+    display: flex;
+    flex-direction: row;
+    width: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+    flex-shrink: 0;
+}
+
+.btn-std:hover{
+    background-color: var(--violet-600);
+}
+
 /* ---------------------------*/
 /* ---------- TEXTS ----------*/
 /* ---------------------------*/
@@ -95,4 +115,14 @@ h2{
     color: white;
     font-size: 2rem;
     line-height: 2rem;
+}
+
+/* ---------------------------*/
+/* ---------- ICONS ----------*/
+/* ---------------------------*/
+
+.hero-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: 	white;
 }

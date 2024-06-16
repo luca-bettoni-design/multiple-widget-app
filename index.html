@@ -33,12 +33,14 @@
 			</div>
 
 			<div class="content-wrapper">
-				<div class="search-wrapper">
+				<div class="input-wrapper">
 					<input type="text" class="input-std" id="id-city-input" placeholder="enter city name" spellcheck="false">
-					<button class="btn-std" id="id-city-search-btn">
-						<image class="Search-Icon" src="images/search.png">
+					<button class="btn-std search-btn" id="id-city-search-btn">
+						<svg class="hero-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>					  
 					</button>
 				</div>
+				
 				<!---->
 				<div class="ErrorMessage-Wrapper">
 					<p class="ErrorMessage-Paragraph">invalid city name</p>
@@ -81,7 +83,7 @@
 			</div>
 
 			<div class="content-wrapper">
-				<div class="task-input-wrapper">
+				<div class="input-wrapper">
 					<input type="text" class="input-std" id="id-task-input" placeholder="Write the note text">
 					<button onclick="AddTask()" class="btn-std">Add</button>
 				</div>

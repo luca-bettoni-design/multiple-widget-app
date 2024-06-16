@@ -5,7 +5,7 @@ const cityInput = document.getElementById("id-city-input");
 const searchButton = document.getElementById("id-city-search-btn");
 const weatherIcon = document.getElementById("id-weather-icon");
 
-async function CheckWeather(City) {
+async function checkWeather(City) {
 	const response = await fetch(ApiUrl + City + `&appid=${ApiKey}`);
 	if (response.status == 404) {
 		document.querySelector(".ErrorMessage-Wrapper").style.display = "flex";
@@ -40,5 +40,5 @@ async function CheckWeather(City) {
 }
 
 searchButton.addEventListener("click", () => {
-	CheckWeather(cityInput.value);
+	checkWeather(cityInput.value);
 });
