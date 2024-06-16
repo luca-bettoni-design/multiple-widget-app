@@ -1,0 +1,14 @@
+.error-wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 32px 0 32px 0;
+    border: solid 1px var(--red-400);
+}
+
+.error-message {
+    text-align: center;
+    color: var(--red-400)
+}

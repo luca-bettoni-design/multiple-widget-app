@@ -30,16 +30,19 @@ async function checkWeather(City) {
 			Math.round(WeatherData.wind.speed) + "kmh";
 
 		if (WeatherData.weather[0].main == "Clouds") {
-			weatherIcon.src = "../assets/weather-assets/clouds.png";
+			weatherIcon.src = "../assets/weather-assets/cloudy.svg";
 		} else if (WeatherData.weather[0].main == "Clear") {
-			weatherIcon.src = "../assets/weather-assets/clear.png";
+			weatherIcon.src = "../assets/weather-assets/sunny.svg";
 		} else if (WeatherData.weather[0].main == "Rain") {
-			weatherIcon.src = "../assets/weather-assets/rain.png";
+			weatherIcon.src = "../assets/weather-assets/rain.svg";
 		} else if (WeatherData.weather[0].main == "Drizzle") {
-			weatherIcon.src = "../assets/weather-assets/drizzle.png";
+			weatherIcon.src = "../assets/weather-assets/drizzle.svg";
 		} else if (WeatherData.weather[0].main == "Mist") {
-			weatherIcon.src = "../assets/weather-assets/mist.png";
+			weatherIcon.src = "../assets/weather-assets/mist.svg";
+		} else if (WeatherData.weather[0].main == "Snow") {
+			weatherIcon.src = "../assets/weather-assets/snow.svg";
 		}
+		
 
 		document.getElementById("id-weather-info").style.display = "block";
 		document.getElementById("id-weather-error").style.display = "none";
