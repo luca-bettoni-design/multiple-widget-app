@@ -21,10 +21,14 @@ body{
 /* ---------- CONTAINERS ----------*/
 /* --------------------------------*/
 
+.main-container{
+    max-width: 1440px;
+    margin: 120px auto 120px auto;
+}
+
 .main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 600px;
     gap: 2rem;
 }
 

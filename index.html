@@ -22,125 +22,115 @@
 
 <body>
 
-	<div class="main-grid">
-
-		<!----------------------------->
-		<!---------- WEATHER ---------->
-		<!----------------------------->
-
-		<div class="widget-wrapper">
-
-			<div class="heading-wrapper">
-				<h2>Weather</h2>
-			</div>
-
-			<div class="content-wrapper">
-				<div class="input-wrapper">
-					<input type="text" class="input-std" id="id-city-input" placeholder="enter city name" spellcheck="false">
-					<button class="btn-std search-btn" id="id-city-search-btn">
-						<svg class="hero-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>					  
-					</button>
+	<div class="main-container">
+		<div class="main-grid">
+			<!----------------------------->
+			<!---------- WEATHER ---------->
+			<!----------------------------->
+			<div class="widget-wrapper">
+				<div class="heading-wrapper">
+					<h2>Weather</h2>
 				</div>
-				
+				<div class="content-wrapper">
+					<div class="input-wrapper">
+						<input type="text" class="input-std" id="id-city-input" placeholder="enter city name"
+							spellcheck="false">
+						<button class="btn-std search-btn" id="id-city-search-btn">
+							<svg class="hero-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+							</svg>
+						</button>
+					</div>
 
-				<div class="error-wrapper" id="id-weather-error">
-					<p class="error-message">invalid city name</p>
-				</div>
+					<div class="error-wrapper" id="id-weather-error">
+						<p class="error-message">invalid city name</p>
+					</div>
 
-				<div class="weather-info-wrapper" id="id-weather-info">
-					<img class="weather-icon" id="id-weather-icon">
-					<h1 class="Temperature-H1" id="id-tempreature-value">22°C</h1>
-					<h2 class="City-H2" id="id-city">New York</h2>
-					<div class="Details-Wrapper">
-						<div class="DataColumn">
-							<img class="Humidity-Image" src="images/humidity.png">
-							<div>
-								<p class="Humidity-Label"> HUMIDITY </p>
-								<p class="Humidity-Value" id="id-humidity-value">50%</p>
+					<div class="weather-info-wrapper" id="id-weather-info">
+
+						<div class="left-weather-split"> <!-- LEFT SPLIT -->
+							<img class="weather-icon" id="id-weather-icon">
+							<h2 class="City-H2" id="id-city">New York</h2>
+						</div>
+
+						<div class="right-weather-split"> <!-- RIGHT SPLIT -->
+							<h1 class="Temperature-H1" id="id-tempreature-value">22°C</h1>
+							<div class="DataColumn">
+								<img class="Humidity-Image" src="images/humidity.png">
+								<div>
+									<p class="Humidity-Label"> HUMIDITY </p>
+									<p class="Humidity-Value" id="id-humidity-value">50%</p>
+								</div>
+							</div>
+							<div class="DataColumn">
+								<img class="Wind-Image" src="images/wind.png">
+								<div>
+									<p class="Wind-Label"> WIND </p>
+									<p class="Wind-Value" id="id-wind-value">15</p>
+								</div>
 							</div>
 						</div>
-						<div class="DataColumn">
-							<img class="Wind-Image" src="images/wind.png">
-							<div>
-								<p class="Wind-Label"> WIND </p>
-								<p class="Wind-Value" id="id-wind-value">15</p>
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
-
-		</div>
-
-		<!-------------------------------->
-		<!---------- TO DO LIST ---------->
-		<!-------------------------------->
-
-
-		<div class="widget-wrapper">
-
-			<div class="heading-wrapper">
-				<h2>To-Do List</h2>
-			</div>
-
-			<div class="content-wrapper">
-				<div class="input-wrapper">
-					<input type="text" class="input-std" id="id-task-input" placeholder="Write the note text">
-					<button onclick="AddTask()" class="btn-std">Add</button>
+			<!-------------------------------->
+			<!---------- TO DO LIST ---------->
+			<!-------------------------------->
+			<div class="widget-wrapper">
+				<div class="heading-wrapper">
+					<h2>To-Do List</h2>
 				</div>
-				<div class="list-wrapper">
-					<ul class="list-wrapper" id="id-list-wrapper">
-						<!-- <li class="Checked">Task 1</li>
-						<li>Task 2</li>
-						<li>Task 3</li> -->
-					</ul>
+				<div class="content-wrapper">
+					<div class="input-wrapper">
+						<input type="text" class="input-std" id="id-task-input" placeholder="Write the note text">
+						<button onclick="AddTask()" class="btn-std">Add</button>
+					</div>
+					<div class="list-wrapper">
+						<ul class="list-wrapper" id="id-list-wrapper">
+							<!-- <li class="Checked">Task 1</li>
+							<li>Task 2</li>
+							<li>Task 3</li> -->
+						</ul>
+					</div>
 				</div>
 			</div>
-
-		</div>
-
-		<!-------------------------->
-		<!---------- QUIZ ---------->
-		<!-------------------------->
-
-		<div class="widget-wrapper">
-
-			<div class="heading-wrapper">
-				<h2> Quiz </h2>
-			</div>
-
-			<div class="content-wrapper">
-				<h2 id="question-id">Question goes here</h2>
-
-				<div class="buttons-wrapper" id="answer-wrapper-id">
-					<button class="standard-button">Answer 1</button>
-					<button class="standard-button">Answer 2</button>
-					<button class="standard-button">Answer 3</button>
-					<button class="standard-button">Answer 4</button>
+			<!-------------------------->
+			<!---------- QUIZ ---------->
+			<!-------------------------->
+			<div class="widget-wrapper">
+				<div class="heading-wrapper">
+					<h2> Quiz </h2>
 				</div>
-
-				<button class="standard-button" id="next-button-id">Next</button>
-			</div>
-		</div>
-
-		<!------------------------------>
-		<!---------- PASSWORD ---------->
-		<!------------------------------>
-
-		<div class="main-container">
-			<div class="main-wrapper">
-				<h1 class="widget-title"> Rnadom password generator</h1>
-				<div class="generator-wrapper">
-					<input type="text" class="std-type-field" id="password-output" placeholder="Password will appera right here">
-					<text class="text-button"> copy </text>
+				<div class="content-wrapper">
+					<h2 id="question-id">Question goes here</h2>
+					<div class="buttons-wrapper" id="answer-wrapper-id">
+						<button class="standard-button">Answer 1</button>
+						<button class="standard-button">Answer 2</button>
+						<button class="standard-button">Answer 3</button>
+						<button class="standard-button">Answer 4</button>
+					</div>
+					<button class="standard-button" id="next-button-id">Next</button>
 				</div>
-	
 			</div>
+			<!------------------------------>
+			<!---------- PASSWORD ---------->
+			<!------------------------------>
+			<div class="main-container">
+				<div class="main-wrapper">
+					<h1 class="widget-title"> Rnadom password generator</h1>
+					<div class="generator-wrapper">
+						<input type="text" class="std-type-field" id="password-output"
+							placeholder="Password will appera right here">
+						<text class="text-button"> copy </text>
+					</div>
+
+				</div>
+			</div>
+
 		</div>
-
-		
-
 	</div>
 
 	<script src="scripts/quiz-script.js"></script>
@@ -149,8 +139,8 @@
 
 
 
-	
-	
+
+
 </body>
 
 </html>

@@ -37,14 +37,14 @@ async function checkWeather(City) {
 			weatherIcon.src = "../assets/weather-assets/rain.svg";
 		} else if (WeatherData.weather[0].main == "Drizzle") {
 			weatherIcon.src = "../assets/weather-assets/drizzle.svg";
-		} else if (WeatherData.weather[0].main == "Mist") {
+		} else if (WeatherData.weather[0].main == "severe-thunderstorm.svg") {
 			weatherIcon.src = "../assets/weather-assets/mist.svg";
 		} else if (WeatherData.weather[0].main == "Snow") {
 			weatherIcon.src = "../assets/weather-assets/snow.svg";
 		}
 		
 
-		document.getElementById("id-weather-info").style.display = "block";
+		document.getElementById("id-weather-info").style.display = "flex";
 		document.getElementById("id-weather-error").style.display = "none";
 	}
 }
