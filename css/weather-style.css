@@ -1,6 +1,7 @@
 .weather-info-wrapper {
     display:flex; /* TODO: revert do display none */
     flex-direction: row;
+    height: 100%;
 }
 
 .City-InputField {
@@ -18,9 +19,10 @@
 
 /* TEMPERATURE -------------------- */
 
-.Weather-Icon {
-    width: 160px;
-    margin-top: 30px;
+.weather-icon {
+    max-width: 160px;
+    width: 100%;
+    margin-left: -12px;
 }
 
 .Temperature-H1 {
@@ -28,10 +30,9 @@
     font-weight: 800;
 }
 
-.City-H2 {
+.weather-city {
     font-size: 24px;
-    font-weight: 400;
-    margin: -10px 0 0 0;
+    font-weight: 600;
 }
 
 /* DETAILS -------------------- */
@@ -39,16 +40,20 @@
 .left-weather-split{
     display: flex;
     flex-direction: column;
-    justify-content: left;  
-    width: 40%;
+    height: 100%;
+    align-items: flex-start;  
+    justify-content: space-between;
+    width: 50%;
     flex: 1;
-    align-items: stretch;
+    border-right: solid 1px var(--gray-700);
+    padding: 0 var(--widget-padding) 0 0;
 }
 
 .right-weather-split{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: flex-start;
+    padding: 0 0 0 var(--widget-padding)
 }
 
 

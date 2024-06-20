@@ -48,6 +48,8 @@ body{
 }
 
 .content-wrapper{
+    display: flex;
+    flex-direction: column;
     padding: var(--widget-padding);
     height: 100%;
 }
