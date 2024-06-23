@@ -20,7 +20,8 @@ const questionArray = [
 		],
 	},
 	{
-		question: "What is the unit of force in the International System of Units?",
+		question:
+			"What is the unit of force in the International System of Units?",
 		answer: [
 			{ answerText: "Joule", correct: false },
 			{ answerText: "Pascal", correct: false },
@@ -29,7 +30,8 @@ const questionArray = [
 		],
 	},
 	{
-		question: "What type of rock is formed from the cooling and solidification of magma or lava?",
+		question:
+			"What type of rock is formed from the cooling and solidification of magma or lava?",
 		answer: [
 			{ answerText: "Sedimentary", correct: false },
 			{ answerText: "Metamorphic", correct: false },
@@ -56,7 +58,10 @@ function startQuiz() {
 }
 
 function showQuestion() {
-	resetState();
+	nextButton.style.display = "none";
+	while (answerButtons.firstChild) {
+		answerButtons.removeChild(answerButtons.firstChild);
+	}
 	let currentQuestion = questionArray[currentQuestionIndex];
 	let questionNumber = currentQuestionIndex + 1;
 	questionElement.innerHTML =
@@ -70,13 +75,6 @@ function showQuestion() {
 		answerButtons.appendChild(buttonOption);
 		buttonOption.dataset.correct = answer.correct;
 		buttonOption.addEventListener("click", selectAnswer);
-	}
-}
-
-function resetState() {
-	nextButton.style.display = "none";
-	while (answerButtons.firstChild) {
-		answerButtons.removeChild(answerButtons.firstChild);
 	}
 }
 
@@ -103,23 +101,22 @@ function answerRevealing(answerArray) {
 
 function quizLoopManager() {
 	if (currentQuestionIndex < questionArray.length) {
-		handleNextButton();
+		currentQuestionIndex++;
+		if (currentQuestionIndex < questionArray.length) {
+			showQuestion();
+		} else {
+			showScore();
+		}
 	} else {
 		startQuiz();
 	}
 }
 
-function handleNextButton() {
-	currentQuestionIndex++;
-	if (currentQuestionIndex < questionArray.length) {
-		showQuestion();
-	} else {
-		showScore();
-	}
-}
-
 function showScore() {
-	resetState();
+	nextButton.style.display = "none";
+	while (answerButtons.firstChild) {
+		answerButtons.removeChild(answerButtons.firstChild);
+	}
 	questionElement.innerHTML = `You scored ${score} out of ${questionArray.length}`;
 	nextButton.innerHTML = "play again";
 	nextButton.style.display = "block";
