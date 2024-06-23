@@ -1,41 +1,35 @@
-h1{
-    font-size: 36;
-    color: #222;
+.quiz-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.app-content-section{
-    display: block;
-    max-width: 600px;
-    margin: 100 auto 0 auto;
-    background-color: #ffffff;
-    border-radius: 16px;
-
-}
-.main-container{
-    display: block;
-    padding: 32px;
-}
-.quiz{
-    margin: 32px 0 0 0;
-    border-top: 1px solid #222;
-    padding: 32px 0 0 0;
-}
-.buttons-wrapper{
+.answers-wrapper{
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    margin: 0 0 32px 0;
+    margin-top: var(--widget-padding);;
+}
+
+
+
+.question-text{
+    font-size: 16px;
+    color: var(--gray-100);
+}
+
+.quiz-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.75rem;
 }
 
 .question-progression{
     color: var(--gray-100);
 }
-
-.question-text{
-    font-size: 20px;
-    color: var(--gray-100);
-}
-
 /* buttons styling -------------------------------------------------------------------------------- */
 
 .standard-button{
@@ -45,29 +39,40 @@ h1{
     padding: 0 16px 0 16px;
 }
 
-#answer-wrapper-id .standard-button{
+.answer-btn{
+    text-align: left;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--gray-950);
+    border: 1px solid var(--gray-600)
+}
+
+
+
+/* #answers-wrapper-id .standard-button{
     background-color: #ffffff;
     border: 1px solid #222;
     text-align: left;
     cursor: pointer;
     transition: background-color 0.2s linear 0s;
+} */
+
+#answers-wrapper-id .btn-std:hover:not([disabled]){
+    background-color: var(--gray-950);
+    border-color: var(--violet-500);
 }
 
-#answer-wrapper-id .standard-button:hover:not([disabled]){
-    background-color: #222;
-    color: #fff;
-}
-
-#answer-wrapper-id .standard-button:disabled{
+/* #answers-wrapper-id .standard-button:disabled{
     cursor: no-drop;
+} */
+
+#answers-wrapper-id .correct-status{
+    background-color: var(--lime-950);
+    border-color: var(--lime-400);
 }
 
-#answer-wrapper-id .correct-status{
-    background-color: #9aeabc;
-}
-
-#answer-wrapper-id .incorrect-status{
-    background-color: #ff9393;
+#answers-wrapper-id .incorrect-status{
+    background-color: var(--red-950);
+    border-color: var(--red-400);
 }
 
 #next-button-id.standard-button{

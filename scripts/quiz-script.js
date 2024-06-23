@@ -42,7 +42,7 @@ const questionArray = [
 ];
 
 const questionElement = document.getElementById("question-id");
-const answerButtons = document.getElementById("answer-wrapper-id");
+const answerButtons = document.getElementById("answers-wrapper-id");
 const nextButton = document.getElementById("next-button-id");
 const questionProgression = document.getElementById("id-question-progression");
 
@@ -66,14 +66,14 @@ function showQuestion() {
 	}
 	let currentQuestion = questionArray[currentQuestionIndex];
 	let questionNumber = currentQuestionIndex + 1;
-	questionProgression.innerHTML = questionNumber + "/" +  totalQuestions;
+	questionProgression.innerHTML = "question: " + questionNumber + "/" +  totalQuestions;
 	questionElement.innerHTML = currentQuestion.question;
 	currentQuestion.answer.forEach(answerRendering);
 
 	function answerRendering(answer) {
 		const buttonOption = document.createElement("button");
 		buttonOption.innerHTML = answer.answerText;
-		buttonOption.classList.add("standard-button");
+		buttonOption.classList.add("btn-std", "answer-btn");
 		answerButtons.appendChild(buttonOption);
 		buttonOption.dataset.correct = answer.correct;
 		buttonOption.addEventListener("click", selectAnswer);

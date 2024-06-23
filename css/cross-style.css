@@ -34,7 +34,7 @@ body{
 
 .widget-wrapper{
     display: flex;
-    height: 480px;
+    height: 540px;
     background-color: var(--gray-950);
     flex-direction: column;
     justify-content: flex-start;
@@ -102,7 +102,7 @@ border: solid 1px var(--violet-500);
 
 .btn-std{
     height: 2.75rem;
-    background-color: var(--violet-500);
+    background-color: var(--violet-600);
     color: white;
     padding: 0 1.5rem 0 1.5rem;
     font-size: 1rem;
@@ -120,7 +120,7 @@ border: solid 1px var(--violet-500);
 }
 
 .btn-std:hover{
-    background-color: var(--violet-600);
+    background-color: var(--violet-500);
 }
 
 /* ---------------------------*/
