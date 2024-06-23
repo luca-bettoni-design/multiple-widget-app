@@ -2,7 +2,7 @@
 
 const questionArray = [
 	{
-		question: "What is the chemical symbol for the element gold",
+		question: "What is the chemical symbol for the element gold?",
 		answer: [
 			{ answerText: "Ag", correct: false },
 			{ answerText: "Au", correct: true },
@@ -44,9 +44,11 @@ const questionArray = [
 const questionElement = document.getElementById("question-id");
 const answerButtons = document.getElementById("answer-wrapper-id");
 const nextButton = document.getElementById("next-button-id");
+const questionProgression = document.getElementById("id-question-progression");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let totalQuestions = questionArray.length;
 
 /* --- FUNCTIONS ---*/
 
@@ -64,8 +66,8 @@ function showQuestion() {
 	}
 	let currentQuestion = questionArray[currentQuestionIndex];
 	let questionNumber = currentQuestionIndex + 1;
-	questionElement.innerHTML =
-		questionNumber + ". " + currentQuestion.question;
+	questionProgression.innerHTML = questionNumber + "/" +  totalQuestions;
+	questionElement.innerHTML = currentQuestion.question;
 	currentQuestion.answer.forEach(answerRendering);
 
 	function answerRendering(answer) {
