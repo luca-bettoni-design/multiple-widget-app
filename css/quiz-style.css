@@ -12,6 +12,11 @@
     margin-top: var(--widget-padding);;
 }
 
+.final-score{
+    display: none;
+    color: white;
+}
+
 .question-text{
     font-size: 1rem;
     color: var(--gray-100);

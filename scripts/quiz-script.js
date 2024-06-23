@@ -45,6 +45,7 @@ const questionElement = document.getElementById("question-id");
 const answerButtons = document.getElementById("answers-wrapper-id");
 const nextButton = document.getElementById("next-button-id");
 const questionProgression = document.getElementById("id-question-progression");
+const finalScore = document.getElementById("id-final-score")
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -56,6 +57,8 @@ function startQuiz() {
 	currentQuestionIndex = 0;
 	score = 0;
 	nextButton.innerHTML = "Next";
+	questionElement.style.display = "flex"
+	finalScore.style.display = "none";
 	showQuestion();
 }
 
@@ -115,11 +118,13 @@ function quizLoopManager() {
 }
 
 function showScore() {
+	questionElement.style.display = "none"
 	nextButton.style.display = "none";
 	while (answerButtons.firstChild) {
 		answerButtons.removeChild(answerButtons.firstChild);
 	}
-	questionElement.innerHTML = `Final score: ${score} out of ${questionArray.length}`;
+	finalScore.style.display = "flex";
+	finalScore.innerHTML = `Final score: ${score} out of ${questionArray.length}`;
 	nextButton.innerHTML = "play again";
 	nextButton.style.display = "block";
 }
