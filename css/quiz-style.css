@@ -12,13 +12,42 @@
     margin-top: var(--widget-padding);;
 }
 
-
-
 .question-text{
     font-size: 16px;
     color: var(--gray-100);
 }
 
+.answer-btn{
+    text-align: left;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--gray-950);
+    border: 1px solid var(--gray-600)
+}
+
+.btn-std.answer-btn:hover:disabled{
+    background-color: var(--gray-950);
+    border-color: var(--gray-600);
+}
+
+.btn-std.answer-btn:hover:not(disabled){
+    background-color: var(--gray-950);
+    border-color: var(--violet-500);
+}
+
+.btn-std.answer-btn:disabled{
+    cursor: no-drop;
+}
+
+#answers-wrapper-id .correct-status{
+    background-color: var(--lime-950);
+    border-color: var(--lime-400);
+}
+
+#answers-wrapper-id .incorrect-status{
+    background-color: var(--red-950);
+    border-color: var(--red-400);
+    
+}
 .quiz-footer{
     display: flex;
     flex-direction: row;
@@ -30,55 +59,4 @@
 .question-progression{
     color: var(--gray-100);
 }
-/* buttons styling -------------------------------------------------------------------------------- */
 
-.standard-button{
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    padding: 0 16px 0 16px;
-}
-
-.answer-btn{
-    text-align: left;
-    padding: 0 1rem 0 1rem;
-    background-color: var(--gray-950);
-    border: 1px solid var(--gray-600)
-}
-
-
-
-/* #answers-wrapper-id .standard-button{
-    background-color: #ffffff;
-    border: 1px solid #222;
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.2s linear 0s;
-} */
-
-#answers-wrapper-id .btn-std:hover:not([disabled]){
-    background-color: var(--gray-950);
-    border-color: var(--violet-500);
-}
-
-/* #answers-wrapper-id .standard-button:disabled{
-    cursor: no-drop;
-} */
-
-#answers-wrapper-id .correct-status{
-    background-color: var(--lime-950);
-    border-color: var(--lime-400);
-}
-
-#answers-wrapper-id .incorrect-status{
-    background-color: var(--red-950);
-    border-color: var(--red-400);
-}
-
-#next-button-id.standard-button{
-    background-color: #001e4d;
-    width: auto;
-    color: #fff;
-    display: none;
-
-}
