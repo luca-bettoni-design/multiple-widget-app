@@ -2,39 +2,39 @@
 
 const questionArray = [
 	{
-		question: "question number ONE",
+		question: "What is the chemical symbol for the element gold",
 		answer: [
-			{ answerText: "answer one 1", correct: true },
-			{ answerText: "answer one 2", correct: false },
-			{ answerText: "answer one 3", correct: false },
-			{ answerText: "answer one 4", correct: false },
+			{ answerText: "Ag", correct: false },
+			{ answerText: "Au", correct: true },
+			{ answerText: "Gd", correct: false },
+			{ answerText: "Ge", correct: false },
 		],
 	},
 	{
-		question: "question number TWO",
+		question: "What is the powerhouse of the cell?",
 		answer: [
-			{ answerText: "answer two 1", correct: false },
-			{ answerText: "answer two 2", correct: true },
-			{ answerText: "answer two 3", correct: false },
-			{ answerText: "answer two 4", correct: false },
+			{ answerText: "Nucleus", correct: false },
+			{ answerText: "Ribosome", correct: false },
+			{ answerText: "Mithocondria", correct: true },
+			{ answerText: "Reticulum", correct: false },
 		],
 	},
 	{
-		question: "question number THREE",
+		question: "What is the unit of force in the International System of Units?",
 		answer: [
-			{ answerText: "answer three 1", correct: false },
-			{ answerText: "answer three 2", correct: false },
-			{ answerText: "answer three 3", correct: true },
-			{ answerText: "answer three 4", correct: false },
+			{ answerText: "Joule", correct: false },
+			{ answerText: "Pascal", correct: false },
+			{ answerText: "Newton", correct: true },
+			{ answerText: "Watt", correct: false },
 		],
 	},
 	{
-		question: "question number FOUR",
+		question: "What type of rock is formed from the cooling and solidification of magma or lava?",
 		answer: [
-			{ answerText: "answer four 1", correct: false },
-			{ answerText: "answer four 2", correct: false },
-			{ answerText: "answer four 3", correct: false },
-			{ answerText: "answer four 4", correct: true },
+			{ answerText: "Sedimentary", correct: false },
+			{ answerText: "Metamorphic", correct: false },
+			{ answerText: "Limestone", correct: false },
+			{ answerText: "Igneous", correct: true },
 		],
 	},
 ];
