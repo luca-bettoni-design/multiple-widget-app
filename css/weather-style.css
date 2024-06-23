@@ -22,13 +22,15 @@
 
 .weather-icon {
 	max-width: 160px;
-	width: 100%;
+	flex: 1 1 0;
 	margin-left: -12px;
 }
 
 .weather-city {
 	font-size: 32px;
+    line-height: 40px;
 	font-weight: 600;
+    margin-top: var(--widget-padding);
 }
 
 /*-------------------------*/
@@ -65,7 +67,7 @@
 	column-gap: 4px;
 }
 
-.Humidity-Label {
+.humidity-label {
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 4px;
@@ -73,20 +75,20 @@
 	height: 12px;
 }
 
-.Humidity-Value {
+.humidity-value {
 	font-size: 20px;
 	font-weight: 700;
 	color: var(--gray-300);
 }
 
-.Wind-Label {
+.wind-label {
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 4px;
 	color: var(--gray-500);
 }
 
-.Wind-Value {
+.wind-value {
 	font-size: 20px;
 	font-weight: 700;
 	color: var(--gray-300);
