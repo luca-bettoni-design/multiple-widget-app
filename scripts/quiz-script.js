@@ -119,7 +119,7 @@ function showScore() {
 	while (answerButtons.firstChild) {
 		answerButtons.removeChild(answerButtons.firstChild);
 	}
-	questionElement.innerHTML = `You scored ${score} out of ${questionArray.length}`;
+	questionElement.innerHTML = `Final score: ${score} out of ${questionArray.length}`;
 	nextButton.innerHTML = "play again";
 	nextButton.style.display = "block";
 }
