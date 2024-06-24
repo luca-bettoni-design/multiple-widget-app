@@ -22,8 +22,9 @@
 
 .weather-icon {
 	max-width: 160px;
+	max-height: 160px;
 	flex: 1 1 0;
-	margin-left: -12px;
+	margin-left: -8px;
 }
 
 .weather-city {
