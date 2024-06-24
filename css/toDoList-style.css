@@ -1,96 +1,12 @@
 
-
-.MainSection{
-    background-color: f0f0f0;
-    height: 100vh;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.MainContainer{
-    display: block;
-    max-width:600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.MainWrapper{
-    width: 100%;
-    height: 400px;
-    display:flex;
-    flex-direction: column;
-    align-items: left;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-    background-color: white;
-    border-radius: 16px;
-}
-
-/*heading-------------------------------------------------------*/
-
-.HeadingWrapper{
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 8px;
-    margin-bottom: 16px;
-}
-.HeadingWrapper h1{
-    color:#4a4a4a;
-    font-size: 24px;
-}
-
-.AppLogo{
-    height: 32px;
-    margin-left: 8px;
-}
-
-/*input----------------------------------------------------------*/
-
-.InputBox{
-    height: 40px;
-    border: solid 2px;
-    border-color: #f0f0f0;
-    border-radius: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 320px;
-    margin-right: 8px;
-    font-size: 14px;
-    font-weight: 400;
-}
-    .InputBox::placeholder{
-    color: #dcdcdc;
-    }
-
-.AddButton{
-    height: 40px;
-    background-color: #ff5945;
-    border-radius: 8px;
-    border: none;
-    padding-left: 24px;
-    padding-right: 24px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #fff;
-    ;
-}
-
-.AddButton:hover{
-  background-color: #153677;
-}
-
-/*List------------------------------------------------------------*/
 ul li{
     list-style: none;
     font-size: 16px;
+    color: var(--gray-200);
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 36px;
+    height: 60px;
     padding: 0 0 0 36px;
     user-select: none;
     cursor: pointer;
@@ -102,32 +18,33 @@ ul li::before{
     position: absolute;
     height: 24px;
     width: 24px;
-    background-image: url(images/unchecked.png);
+    background-image: url(../assets/ToDoList-assets/unchecked.png);
     background-size: cover;
     background-position: center;
-    top:6px;
+    top: 18px;
     left: 0px;
 }
 
 ul li.Checked::before{
-    background-image: url(images/checked.png);
+    background-image: url(../assets/ToDoList-assets/checked.png);
 }
 
 ul li.Checked{
-    color: #555555;
+    color: var(--gray-400);
     text-decoration: line-through;
 }
 
 ul li .DeleteIcon{
     position: absolute;
     right: 0;
+    height: 32px;
     width: 32px;
     text-align: center;
-    line-height: 32px;
     font-size: 24px;
     border-radius: 50%;
+    color: var(--violet-500);
 }
 
 ul li .DeleteIcon:hover{
-    background: #f0f0f0;
+    outline: solid 2px var(--violet-500);
 }
