@@ -6,7 +6,7 @@ ul li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 60px;
+    height: 48px;
     padding: 0 0 0 36px;
     user-select: none;
     cursor: pointer;
@@ -21,7 +21,7 @@ ul li::before{
     background-image: url(../assets/ToDoList-assets/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 18px;
+    top: 12px;
     left: 0px;
 }
 
