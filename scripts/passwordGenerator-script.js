@@ -15,6 +15,14 @@ function generatePassword(){
     while(length > password.length){
         password += allCharacters[Math.floor(Math.random() * allCharacters.length)];
     }
-
     passwordBox.value = password;
+}
+
+function copyPassword(){
+    passwordBox.select();
+        navigator.clipboard.writeText(passwordBox.value).then(function() {
+            console.log('Password copiata con successo!');
+        }).catch(function(error) {
+            console.error('Errore nel copiare la password: ', error);
+        });
 }
