@@ -112,6 +112,13 @@ border: solid 1px var(--violet-500);
     font-weight: 400;
 }
 
+.btn-border{
+    height: 2.75rem;
+    background-color: transparent;
+    border: solid 1px var(--violet-600);
+    color: white;
+}
+
 .btn-std.search-btn{
     display: flex;
     flex-direction: row;

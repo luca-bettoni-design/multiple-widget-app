@@ -1,0 +1,26 @@
+.calculator-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.calculator-btn-grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.calculator-btn-grid .btn-border{
+    height: auto;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.calculator-btn-grid .btn-std{
+    height: auto;
+    font-size: 1rem;
+    font-weight: 600;
+}
