@@ -170,28 +170,28 @@
 				<div class="content-wrapper">
 					<div class="calculator-wrapper">
 						<div class="input-wrapper">
-							<input type="text" class="calculator-input" id="id-pcalculator-ouput" value="123456">
+							<input type="text" class="calculator-display" id="id-calculator-output" value="0">
 						</div>
 						<div class="calculator-btn-grid">
-							<input class="btn-dark" type="button" value="AC">
-							<input class="btn-dark" type="button" value="DE">
-							<input class="btn-dark" type="button" value=".">
-							<input class="btn-dark" type="button" value="/">
-							<input class="btn-dark" type="button" value="7">
-							<input class="btn-dark" type="button" value="8">
-							<input class="btn-dark" type="button" value="9">
-							<input class="btn-dark" type="button" value="*">
-							<input class="btn-dark" type="button" value="4">
-							<input class="btn-dark" type="button" value="5">
-							<input class="btn-dark" type="button" value="6">
-							<input class="btn-dark" type="button" value="-">
-							<input class="btn-dark" type="button" value="1">
-							<input class="btn-dark" type="button" value="2">
-							<input class="btn-dark" type="button" value="3">
-							<input class="btn-dark" type="button" value="+">
-							<input class="btn-dark" type="button" value="00">
-							<input class="btn-dark" type="button" value="0">
-							<input class="btn-std" type="button" style="grid-column: 3/5; grid-row: 5/6"value="=">
+							<input class="btn-dark" type="button" value="AC" onclick="clearDisplay()">
+							<input class="btn-dark" type="button" value="DE" onclick="deleteLast()">
+							<input class="btn-dark" type="button" value="." onclick="appendCalcChar('.')">
+							<input class="btn-dark" type="button" value="/" onclick="appendCalcChar('/')">
+							<input class="btn-dark" type="button" value="7" onclick="appendCalcChar('7')">
+							<input class="btn-dark" type="button" value="8" onclick="appendCalcChar('8')">
+							<input class="btn-dark" type="button" value="9" onclick="appendCalcChar('9')">
+							<input class="btn-dark" type="button" value="*" onclick="appendCalcChar('*')">
+							<input class="btn-dark" type="button" value="4" onclick="appendCalcChar('4')">
+							<input class="btn-dark" type="button" value="5" onclick="appendCalcChar('5')">
+							<input class="btn-dark" type="button" value="6" onclick="appendCalcChar('6')">
+							<input class="btn-dark" type="button" value="-" onclick="appendCalcChar('-')">
+							<input class="btn-dark" type="button" value="1" onclick="appendCalcChar('1')">
+							<input class="btn-dark" type="button" value="2" onclick="appendCalcChar('2')">
+							<input class="btn-dark" type="button" value="3" onclick="appendCalcChar('3')">
+							<input class="btn-dark" type="button" value="+" onclick="appendCalcChar('+')">
+							<input class="btn-dark" type="button" value="00" onclick="appendCalcChar('00')">
+							<input class="btn-dark" type="button" value="0" onclick="appendCalcChar('0')">
+							<input class="btn-std" type="button" style="grid-column: 3/5; grid-row: 5/6"value="=" onclick="calculateResult()">
 						</div>
 					</div>
 
@@ -205,6 +205,8 @@
 	<script src="scripts/toDoList-script.js"></script>
 	<script src="scripts/weather-script.js"></script>
 	<script src="scripts/passwordGenerator-script.js"></script>
+	<script src="scripts/calculator-script.js"></script>
+
 
 
 
